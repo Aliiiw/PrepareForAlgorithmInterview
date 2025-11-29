@@ -1,21 +1,49 @@
-import java.util.PriorityQueue
-
 fun main() {
-    println(findKthLargest(intArrayOf(5, 6, 3, 4, 4, 2, 2, 5, 345, 45, 2, 342, 35, 2342), 1))
+    val matrix = arrayOf(
+        intArrayOf(1, 1, 1),
+        intArrayOf(1, 0, 1),
+        intArrayOf(1, 1, 1)
+    )
+
+    setMatrixZero(matrix)
 }
 
+fun setMatrixZero(matrix: Array<IntArray>) {
+    val rows = matrix.size
+    val columns = matrix[0].size
 
-fun findKthLargest(nums: IntArray, k: Int): Int {
-    val minHeap = PriorityQueue<Int>()
-    nums.forEach { num ->
-        minHeap.add(num)
+    val rowsWithZeros = mutableListOf<Int>()
+    val columnsWithZeros = mutableListOf<Int>()
 
-        if (minHeap.size > k) {
-            minHeap.poll()
+    for (row in 0 until rows) {
+        for (col in 0 until columns) {
+            if (matrix[row][col] == 0) {
+                rowsWithZeros.add(row)
+                columnsWithZeros.add(col)
+            }
         }
     }
-    return minHeap.peek()
+
+    for (row in 0 until rows) {
+        for (col in 0 until columns) {
+            if (row in rowsWithZeros && col in columnsWithZeros) {
+                matrix[row][col] = 0
+            }
+        }
+    }
 }
+
+//fun findKthLargest(nums: IntArray, k: Int): Int {
+//    val minHeap = PriorityQueue<Int>()
+//    nums.forEach { num ->
+//        minHeap.add(num)
+//
+//        if (minHeap.size > k) {
+//            minHeap.poll()
+//        }
+//    }
+//    return minHeap.peek()
+//}
 
 //fun findKthLargest(nums: IntArray, k: Int): Int {
 //    nums.sort()
