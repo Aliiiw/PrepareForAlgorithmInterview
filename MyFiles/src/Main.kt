@@ -1,7 +1,25 @@
 fun main() {
-
+    val test = intArrayOf(1, 2, 3, 4, 5, 6, 7)
+    rotate(test, 3)
 }
 
+fun rotate(nums: IntArray, k: Int): Unit {
+    val n = nums.size
+    if (n == 0) return
+
+    val result = IntArray(n)
+    val step = k % n
+
+    for (i in 0 until n) {
+        val newIndex = (i + step) % n
+        result[newIndex] = nums[i]
+    }
+
+    for (i in 0 until n) {
+        nums[i] = result[i]
+    }
+
+}
 
 //fun reverseString(s: CharArray): Unit {
 //    var left = 0
