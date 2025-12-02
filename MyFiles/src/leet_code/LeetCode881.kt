@@ -1,3 +1,5 @@
+package leet_code
+
 fun numRescueBoats(people: IntArray, limit: Int): Int {
     var boats = 0
     var start = 0

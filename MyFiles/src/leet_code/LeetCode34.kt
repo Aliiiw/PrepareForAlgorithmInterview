@@ -1,3 +1,5 @@
+package leet_code
+
 fun searchRange(nums: IntArray, target: Int): IntArray {
     val first = findFirst(nums, target)
     val last = findLast(nums, target)

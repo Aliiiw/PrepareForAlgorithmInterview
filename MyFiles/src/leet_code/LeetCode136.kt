@@ -1,3 +1,5 @@
+package leet_code
+
 fun main() {
     println(singleNumber(intArrayOf(1, 1, 2, 2, 4)))
 }

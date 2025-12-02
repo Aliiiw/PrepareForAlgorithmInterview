@@ -1,4 +1,4 @@
-/* The isBadVersion API is defined in the parent class VersionControl.
+package leet_code/* The isBadVersion API is defined in the parent class VersionControl.
       fun isBadVersion(version: Int) : Boolean {} */
 
 //class Solution : VersionControl() {

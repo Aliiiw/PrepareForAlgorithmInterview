@@ -1,3 +1,5 @@
+package leet_code
+
 import java.util.PriorityQueue
 
 fun findKthLargest(nums: IntArray, k: Int): Int {
@@ -12,7 +14,7 @@ fun findKthLargest(nums: IntArray, k: Int): Int {
     return minHeap.peek()
 }
 
-//fun findKthLargest(nums: IntArray, k: Int): Int {
+//fun leet_code.findKthLargest(nums: IntArray, k: Int): Int {
 //    nums.sort()
 //    return nums[nums.size - k]
 //}

@@ -1,4 +1,4 @@
-
+package leet_code
 fun reverseString(s: CharArray): Unit {
     val result = mutableListOf<String>()
     for(i in s.size - 1 downTo 0) {
@@ -7,7 +7,7 @@ fun reverseString(s: CharArray): Unit {
     println(result)
 }
 
-//fun reverseString(s: CharArray): Unit {
+//fun leet_code.reverseString(s: CharArray): Unit {
 //    var left = 0
 //    var right = s.size - 1
 //

@@ -1,3 +1,5 @@
+package leet_code
+
 fun main() {
     moveZeroes(intArrayOf(0, 1, 0, 3, 12))
 }

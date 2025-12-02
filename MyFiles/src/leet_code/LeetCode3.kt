@@ -1,3 +1,5 @@
+package leet_code
+
 import kotlin.math.max
 
 fun main() {

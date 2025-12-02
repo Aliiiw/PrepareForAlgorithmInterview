@@ -1,3 +1,5 @@
+package leet_code
+
 fun main() {
     println(coinChange(intArrayOf(1, 2, 5), 11))
 }

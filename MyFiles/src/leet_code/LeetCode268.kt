@@ -1,4 +1,4 @@
-
+package leet_code
 fun missingNumber(nums: IntArray): Int {
     val n = nums.size
     var sum = 0

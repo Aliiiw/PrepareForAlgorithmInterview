@@ -1,3 +1,5 @@
+package leet_code
+
 fun validMountainArray(arr: IntArray): Boolean {
     val arraySize = arr.size
     if (arraySize < 3) return false

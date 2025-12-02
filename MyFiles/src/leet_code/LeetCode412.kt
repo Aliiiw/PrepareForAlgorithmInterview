@@ -1,4 +1,4 @@
-
+package leet_code
 fun fizzBuzz(n: Int): List<String> {
     val items = mutableListOf<String>()
     for (i in 1..n) {

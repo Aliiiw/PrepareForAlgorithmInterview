@@ -1,4 +1,4 @@
-
+package leet_code
 fun setMatrixZero(matrix: Array<IntArray>) {
     val rows = matrix.size
     val columns = matrix[0].size
