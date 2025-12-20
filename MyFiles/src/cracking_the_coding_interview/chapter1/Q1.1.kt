@@ -1,7 +1,5 @@
 package cracking_the_coding_interview.chapter1
 
-import javax.xml.stream.events.Characters
-
 /*
 Is Unique: Implement an algorithm to determine if a string has all unique characters.
  What if you cannot use additional data structures?
