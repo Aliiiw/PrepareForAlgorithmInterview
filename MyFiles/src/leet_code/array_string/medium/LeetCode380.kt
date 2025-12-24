@@ -1,4 +1,4 @@
-package leet_code
+package leet_code.array_string.medium
 
 import kotlin.random.Random
 

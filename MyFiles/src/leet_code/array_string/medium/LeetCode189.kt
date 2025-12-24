@@ -1,4 +1,4 @@
-package leet_code
+package leet_code.array_string.medium
 
 fun rotate(nums: IntArray, k: Int) {
     val n = nums.size

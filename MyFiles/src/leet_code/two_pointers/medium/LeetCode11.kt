@@ -1,4 +1,4 @@
-package leet_code
+package leet_code.two_pointers.medium
 
 import kotlin.math.max
 import kotlin.math.min

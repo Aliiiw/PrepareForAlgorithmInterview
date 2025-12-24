@@ -1,4 +1,4 @@
-package leet_code
+package leet_code.array_string.medium
 
 fun main() {
     val test = intArrayOf(1, 2, 3, 4)
