@@ -12,28 +12,28 @@ import leet_code.binarytree_general.easy.TreeNode
  *     var right: TreeNode? = null
  * }
  */
-class Solution {
-
-    var result: Int? = null
-    var k: Int? = null
-
-    fun kthSmallest(root: TreeNode?, k: Int): Int {
-        this.k = k
-        solution(root)
-        return result!!
-    }
-
-    fun solution(root: TreeNode?) {
-        if (root == null) return
-
-        solution(root.left)
-
-        k = k?.minus(1)
-        if (k == 0) {
-            result = root.value
-        }
-
-        solution(root.right)
-    }
-}
+//class Solution {
+//
+//    var result: Int? = null
+//    var k: Int? = null
+//
+//    fun kthSmallest(root: TreeNode?, k: Int): Int {
+//        this.k = k
+//        solution(root)
+//        return result!!
+//    }
+//
+//    fun solution(root: TreeNode?) {
+//        if (root == null) return
+//
+//        solution(root.left)
+//
+//        k = k?.minus(1)
+//        if (k == 0) {
+//            result = root.value
+//        }
+//
+//        solution(root.right)
+//    }
+//}
 
